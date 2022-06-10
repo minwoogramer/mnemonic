@@ -25,7 +25,7 @@ app.get('/', function(req, res, next) {
 });
 app.use('/wallet', walletRouter);
 
-// catch 404 and forward to error handler
+// 404 error catch
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err['status'] = 404;
